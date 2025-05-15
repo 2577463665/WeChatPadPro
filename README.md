@@ -9,14 +9,12 @@
             <img src="https://img.shields.io/badge/Telegram-交流群-blue?style=for-the-badge&logo=telegram" alt="Telegram Group">
         </a>
         <a href="https://pd.qq.com/s/9hk7qzj9p">
-            <img src="https://img.shields.io/badge/QQ-频道-EB1923?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ Channel">
         </a>
     </p>
     <p align="center">
         <b>⭐️ 欢迎加入官方交流群 ⭐️</b><br>
         <span style="font-size: 1.2em;">
             👉 <a href="https://t.me/+LK0JuqLxjmk0ZjRh">Telegram 群组</a> | 
-            <a href="https://pd.qq.com/s/9hk7qzj9p">QQ 频道</a> 👈
         </span><br>
         获取最新版本更新、技术支持和使用教程
     </p>
@@ -52,34 +50,57 @@
 </td>
 <td width="33%">
 
-### 🎮 QQ 频道
-- 🔗 频道名称：粹一的频道
-- 🔍 频道链接：[点击加入](https://pd.qq.com/s/9hk7qzj9p)
-- 📱 加入方式：
-  - 方式一：[点击链接直接加入](https://pd.qq.com/s/9hk7qzj9p)
-  - 方式二：扫描下方二维码
+[//]: # ()
+[//]: # (### 🎮 QQ 频道)
 
-<div align="center">
-<img src="qrcode_1747080638386.jpg" width="150" alt="QQ频道二维码">
-</div>
+[//]: # (- 🔗 频道名称：粹一的频道)
 
-</td>
-<td width="33%">
+[//]: # (- 🔍 频道链接：[点击加入]&#40;https://pd.qq.com/s/9hk7qzj9p&#41;)
 
-### 👥 微信交流群
-- 📱 加入方式：扫描下方二维码
-- 💡 交流内容：
-  - 技术讨论
-  - 问题解答
-  - 使用经验分享
+[//]: # (- 📱 加入方式：)
 
-<div align="center">
-<img src="https://github.com/user-attachments/assets/679307c9-15eb-4768-8aa8-420211bb0ffd" width="150" alt="微信群二维码">
-</div>
+[//]: # (  - 方式一：[点击链接直接加入]&#40;https://pd.qq.com/s/9hk7qzj9p&#41;)
 
-</td>
-</tr>
-</table>
+[//]: # (  - 方式二：扫描下方二维码)
+
+[//]: # ()
+[//]: # (<div align="center">)
+
+[//]: # (<img src="qrcode_1747080638386.jpg" width="150" alt="QQ频道二维码">)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</td>)
+
+[//]: # (<td width="33%">)
+
+[//]: # ()
+[//]: # (### 👥 微信交流群)
+
+[//]: # (- 📱 加入方式：扫描下方二维码)
+
+[//]: # (- 💡 交流内容：)
+
+[//]: # (  - 技术讨论)
+
+[//]: # (  - 问题解答)
+
+[//]: # (  - 使用经验分享)
+
+[//]: # ()
+[//]: # (<div align="center">)
+
+[//]: # (<img src="https://github.com/user-attachments/assets/679307c9-15eb-4768-8aa8-420211bb0ffd" width="150" alt="微信群二维码">)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</td>)
+
+[//]: # (</tr>)
+
+[//]: # (</table>)
 
 ## 💰 赞助支持
 
