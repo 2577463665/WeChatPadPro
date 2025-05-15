@@ -50,57 +50,33 @@
 </td>
 <td width="33%">
 
-[//]: # ()
-[//]: # (### 🎮 QQ 频道)
+### 🆔 QQ 交流群
+- 🔗 群号码：1047551320
+- 📱 加入方式：
+  - 方式一：扫描右侧二维码
+  - 方式二：QQ搜索群号加入
 
-[//]: # (- 🔗 频道名称：粹一的频道)
+<div align="center">
+<img src="./static/qrcode/photo_2025-05-18_00-07-53.jpg" width="150" alt="QQ群二维码">
+</div>
 
-[//]: # (- 🔍 频道链接：[点击加入]&#40;https://pd.qq.com/s/9hk7qzj9p&#41;)
+</td>
+<td width="33%">
 
-[//]: # (- 📱 加入方式：)
+### 👥 微信交流群
+- 📱 加入方式：扫描下方二维码
+- 💡 交流内容：
+  - 技术讨论
+  - 问题解答
+  - 使用经验分享
 
-[//]: # (  - 方式一：[点击链接直接加入]&#40;https://pd.qq.com/s/9hk7qzj9p&#41;)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/679307c9-15eb-4768-8aa8-420211bb0ffd" width="150" alt="微信群二维码">
+</div>
 
-[//]: # (  - 方式二：扫描下方二维码)
-
-[//]: # ()
-[//]: # (<div align="center">)
-
-[//]: # (<img src="qrcode_1747080638386.jpg" width="150" alt="QQ频道二维码">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (</td>)
-
-[//]: # (<td width="33%">)
-
-[//]: # ()
-[//]: # (### 👥 微信交流群)
-
-[//]: # (- 📱 加入方式：扫描下方二维码)
-
-[//]: # (- 💡 交流内容：)
-
-[//]: # (  - 技术讨论)
-
-[//]: # (  - 问题解答)
-
-[//]: # (  - 使用经验分享)
-
-[//]: # ()
-[//]: # (<div align="center">)
-
-[//]: # (<img src="https://github.com/user-attachments/assets/679307c9-15eb-4768-8aa8-420211bb0ffd" width="150" alt="微信群二维码">)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (</td>)
-
-[//]: # (</tr>)
-
-[//]: # (</table>)
+</td>
+</tr>
+</table>
 
 ## 💰 赞助支持
 
@@ -190,6 +166,16 @@
 
 
 WeChatPadPro 是基于 WeChat Pad 协议的高级微信管理工具，支持以下功能：
+### 🔧 MCP增强功能
+- ⚡ 多协议适配：自动识别并适配不同版本的微信协议
+- ⚡ 自动化管理：通过MCP配置实现好友请求自动通过、消息同步
+
+### 🌐 MCP模型上下文协议
+├─ 协议标准：提供LLM与外部系统的标准化交互接口
+├─ 多模态支持：文本/图像/音频的上下文统一处理
+├─ 动态加载：运行时配置热更新机制
+└─ 开源生态：兼容HuggingFace/OpenAI等主流模型平台
+
 
 - 朋友圈收发与互动（点赞、评论）
 - 好友管理（添加、删除、清理僵尸粉）
@@ -528,6 +514,1076 @@ innodb_large_prefix = 1
 ![](./static/doc/apipost1.png)
 
 ![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
+> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
+> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
+>
+> 
+>
+> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
+>
+> 
+>
+> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
+>
+> 
+
+
+
+![](./static/doc/apipost1.png)
+
+![](./static/doc/apipost2.png)
+
+
+
+
+
+## 关于测试
+
+> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
+>
+> 
+>
+> 之后，必须要设置以下环境变量：
+>
+> - `WS_URL`：你的
 
 
 
