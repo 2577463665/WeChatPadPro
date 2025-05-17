@@ -71,7 +71,7 @@
   - 使用经验分享
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/679307c9-15eb-4768-8aa8-420211bb0ffd" width="150" alt="微信群二维码">
+<img src="./static/qrcode/bde33b9ae95b917841a61c86311c9510.jpeg" width="150" alt="微信群二维码">
 </div>
 
 </td>
