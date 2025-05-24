@@ -60,35 +60,6 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
 </td>
 <td width="33%">
 
-### 👥 微信交流群
-- 📱 加入方式：扫描下方二维码
-- 💡 交流内容：
-    - 技术讨论
-    - 问题解答
-    - 使用经验分享
-
-<div align="center">
-<img src="./static/qrcode/vx.jpeg" width="150" alt="微信群二维码">
-</div>
-
-</td>
-<td width="33%">
-
-### 🔔 钉钉交流群
-- 📱 加入方式：[点击加入](https://qr.dingtalk.com/action/joingroup?code=v1,k1,6uLDgyJodWIXoxwdwF3bYlv1GRj5uoC8waI6Z4PtIi0=&_dt_no_comment=1&origin=11) 或扫描下方二维码
-- 💡 交流内容：
-    - 技术讨论
-    - 问题解答
-    - 使用经验分享
-
-<div align="center">
-<img src="./static/qrcode/丁丁二维码.jpeg" width="150" alt="钉钉群二维码">
-</div>
-
-</td>
-</tr>
-</table>
-
 ## 💰 赞助支持
 
 如果您觉得这个项目对您有帮助，欢迎赞助支持我们继续开发维护！
