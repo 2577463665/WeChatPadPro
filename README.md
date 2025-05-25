@@ -42,6 +42,7 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
 👉 [点击查看完整的微信功能使用说明](./微信功能使用说明.md)
 
 ---
+
 ## 📢 加入官方交流群
 
 <table>
@@ -52,10 +53,23 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
 - 🔗 群组链接：[点击加入](https://t.me/+LK0JuqLxjmk0ZjRh)
 - 👥 当前成员：203+ 位用户
 - 💡 交流内容：
-    - 最新版本发布通知
-    - 技术问题解答
-    - 使用经验分享
-    - Bug 反馈与建议
+  - 最新版本发布通知
+  - 技术问题解答
+  - 使用经验分享
+  - Bug 反馈与建议
+
+</td>
+<td width="33%">
+
+### 🆔 QQ 交流群
+- 🔗 群号码：1047551320
+- 📱 加入方式：
+  - 方式一：扫描右侧二维码
+  - 方式二：QQ搜索群号加入
+
+<div align="center">
+<img src="./static/qrcode/photo_2025-05-18_00-07-53.jpg" width="150" alt="QQ群二维码">
+</div>
 
 </td>
 <td width="33%">
@@ -63,26 +77,12 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
 ### 👥 微信交流群
 - 📱 加入方式：扫描下方二维码
 - 💡 交流内容：
-    - 技术讨论
-    - 问题解答
-    - 使用经验分享
+  - 技术讨论
+  - 问题解答
+  - 使用经验分享
 
 <div align="center">
-<img src="./static/qrcode/vx.jpeg" width="150" alt="微信群二维码">
-</div>
-
-</td>
-<td width="33%">
-
-### 🔔 钉钉交流群
-- 📱 加入方式：[点击加入](https://qr.dingtalk.com/action/joingroup?code=v1,k1,6uLDgyJodWIXoxwdwF3bYlv1GRj5uoC8waI6Z4PtIi0=&_dt_no_comment=1&origin=11) 或扫描下方二维码
-- 💡 交流内容：
-    - 技术讨论
-    - 问题解答
-    - 使用经验分享
-
-<div align="center">
-<img src="./static/qrcode/丁丁二维码.jpeg" width="150" alt="钉钉群二维码">
+<img src="./static/qrcode/bde33b9ae95b917841a61c86311c9510.jpeg" width="150" alt="微信群二维码">
 </div>
 
 </td>
@@ -153,7 +153,7 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
 
 ### 💳 加入费用
 
-- 📅 **年度会员价：￥299 元/年抢先活动价**  
+- 📅 **年度会员价：￥199 元/年**  
   一次性付费，全年畅享全部专属内容与服务。
 
 ---
