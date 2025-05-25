@@ -59,6 +59,11 @@ WeChatPadPro 提供了丰富的微信功能控制命令，包括：
     - 技术问题解答
     - 使用经验分享
     - Bug 反馈与建议
+- 📱 扫码加入：
+
+<div align="center">
+<img src="./static/qrcode/diabao.JPG" width="200" alt="Telegram群二维码">
+</div>
 
 </td>
 <td width="33%">
