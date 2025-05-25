@@ -1,117 +1,201 @@
-# WechatPadPro 部署指南
+# WeChatPadPro Docker 部署教程
 
-## 系统要求
+## 目录
+- [环境要求](#环境要求)
+- [快速部署](#快速部署)
+- [配置说明](#配置说明)
+- [常见问题](#常见问题)
+- [维护指南](#维护指南)
 
-- Docker 20.10.0 或更高版本
-- Docker Compose v2.0.0 或更高版本
-- 至少 2GB 可用内存
-- 至少 10GB 可用磁盘空间
+## 环境要求
+
+### 基础环境
+- Docker 19.03.0+
+- Docker Compose 1.27.0+
+- 操作系统：Linux/Windows/MacOS
+- 最小配置：2核CPU/4G内存/50G硬盘
+
+### 端口要求
+- 1239: WeChatPadPro 服务端口
+- 6379: Redis 服务端口（可选）
+- 3306: MySQL 服务端口（可选）
 
 ## 快速部署
 
-1. 创建部署目录：
-```bash
-mkdir wechatpadpro && cd wechatpadpro
-```
+### 方式一：直接从 GitHub 拉取部署
 
-2. 下载部署文件：
-   - 将 `docker-compose.yml` 和 `.env` 文件复制到部署目录
-
-3. 启动服务：
 ```bash
+# 1. 创建并进入部署目录
+mkdir -p wechatpadpro && cd wechatpadpro
+
+# 2. 下载 docker-compose.yml
+curl -O https://raw.githubusercontent.com/luolin-ai/WeChatPadPro/main/deploy/docker-compose.yml
+
+# 3. 启动服务
 docker-compose up -d
+
+# 4. 查看服务状态
+docker-compose ps
 ```
 
-4. 验证服务状态：
+### 方式二：在项目目录中部署
+
 ```bash
+# 1. 克隆项目
+git clone https://github.com/luolin-ai/WeChatPadPro.git
+
+# 2. 进入部署目录
+cd WeChatPadPro/deploy
+
+# 3. 启动服务
+docker-compose up -d
+
+# 4. 查看服务状态
 docker-compose ps
 ```
 
 ## 配置说明
-下面这些不需要改动容器默认全部配置好了
-### 环境变量（.env）
 
-1. 应用配置：
-   - `DEBUG`: 调试模式开关（false/true）
-   - `ADMIN_KEY`: 管理员密钥
-   - `HOST`: 监听地址
-   - `PORT`: 监听端口
+### docker-compose.yml 配置详解
 
-2. Redis配置：
-   - `REDIS_HOST`: Redis主机名
-   - `REDIS_PORT`: Redis端口
-   - `REDIS_DB`: Redis数据库编号
-   - `REDIS_PASS`: Redis密码
+```yaml
+version: '3.8'
+services:
+  wechatpadpro:
+    # WeChatPadPro 主服务
+    image: luolinaiwis/wechatpadpro:v0.1
+    ports:
+      - "1239:1239"    # 服务端口，可根据需要修改
+    environment:
+      - DEBUG=false    # 调试模式开关
+      - ADMIN_KEY=12345    # 管理员密钥
+      - REDIS_PASS=123456    # Redis密码
+      # 其他环境变量...
 
-3. MySQL配置：
-   - `MYSQL_ROOT_PASSWORD`: MySQL root密码
-   - `MYSQL_DATABASE`: 数据库名
-   - `MYSQL_USER`: 数据库用户
-   - `MYSQL_PASSWORD`: 数据库密码
+  redis:
+    # Redis 服务
+    image: redis:7-alpine
+    command: redis-server --requirepass 123456    # Redis密码
 
-4. 系统配置：
-   - `TZ`: 时区设置
-
-### 持久化存储
-
-系统使用以下Docker卷进行数据持久化：
-- `wechatpadpro_data`: 应用数据
-- `wechatpadpro_logs`: 应用日志
-- `redis_data`: Redis数据
-- `mysql_data`: MySQL数据
-
-## 服务访问
-
-- 应用访问地址：`http://localhost:1239`
-
-
-## 常用操作
-
-1. 查看服务日志：
-```bash
-docker-compose logs -f
+  mysql:
+    # MySQL 服务
+    image: luolinaiwis/wechatpadpro-mysql:v0.1
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456    # Root密码
+      - MYSQL_USER=wechatpadpro    # 应用用户
+      - MYSQL_PASSWORD=123456    # 应用用户密码
 ```
 
-2. 重启服务：
+### 环境变量说明
+
+| 变量名 | 说明 | 默认值 | 是否必填 |
+|--------|------|--------|----------|
+| DEBUG | 调试模式 | false | 否 |
+| ADMIN_KEY | 管理员密钥 | 12345 | 是 |
+| PORT | 服务端口 | 1239 | 否 |
+| REDIS_PASS | Redis密码 | 123456 | 是 |
+| MYSQL_CONNECT_STR | MySQL连接串 | 见配置文件 | 是 |
+
+## 常见问题
+
+### 1. 服务无法启动
+
+检查步骤：
 ```bash
+# 查看服务日志
+docker-compose logs
+
+# 查看具体服务日志
+docker-compose logs wechatpadpro
+docker-compose logs mysql
+docker-compose logs redis
+```
+
+### 2. 数据持久化
+
+数据默认保存在以下 Docker volumes 中：
+- wechatpadpro_data：应用数据
+- wechatpadpro_logs：应用日志
+- redis_data：Redis数据
+- mysql_data：MySQL数据
+
+查看数据卷：
+```bash
+docker volume ls | grep wechatpadpro
+```
+
+### 3. 服务重启
+
+```bash
+# 重启所有服务
 docker-compose restart
+
+# 重启单个服务
+docker-compose restart wechatpadpro
 ```
 
-3. 停止服务：
+## 维护指南
+
+### 日常维护
+
+1. 查看服务状态：
 ```bash
-docker-compose down
+docker-compose ps
 ```
 
-4. 完全清理（包括数据）：
+2. 查看服务日志：
 ```bash
-docker-compose down -v
+docker-compose logs -f --tail=100
 ```
 
-## 注意事项
+3. 备份数据：
+```bash
+# 备份 MySQL 数据
+docker exec wechatpadpro_mysql mysqldump -u root -p123456 wechatpadpro > backup.sql
+```
 
-1. 首次启动时，MySQL会自动初始化数据库结构
-2. 请确保修改默认密码以提高安全性
-3. 建议定期备份数据卷
-4. 如需修改配置，请编辑.env文件后重启服务
+### 版本升级
 
-## 故障排除
+1. 拉取最新镜像：
+```bash
+docker-compose pull
+```
 
-1. 如果服务无法启动，请检查：
-   - Docker服务是否正常运行
-   - 端口1239是否被占用
-   - 系统资源是否充足
+2. 重新部署服务：
+```bash
+docker-compose up -d
+```
 
-2. 如果数据库连接失败：
-   - 确认MySQL容器是否正常运行
-   - 检查数据库密码配置是否正确
+### 服务扩展
 
-3. 如果Redis连接失败：
-   - 确认Redis容器是否正常运行
-   - 检查Redis密码配置是否正确
+如需扩展服务配置，可以创建 `docker-compose.override.yml` 文件：
+
+```yaml
+version: '3.8'
+services:
+  wechatpadpro:
+    environment:
+      - CUSTOM_VAR=value
+    volumes:
+      - ./custom_config:/app/config
+```
+
+## 安全建议
+
+1. 修改默认密码
+   - 修改 ADMIN_KEY
+   - 修改 MySQL 密码
+   - 修改 Redis 密码
+
+2. 限制端口访问
+   - 只对必要端口开放外部访问
+   - 使用防火墙限制 IP 访问
+
+3. 定期备份
+   - 备份 MySQL 数据
+   - 备份应用数据
 
 ## 技术支持
 
-如遇到问题，请查看应用日志：
-```bash
-docker-compose logs wechatpadpro
-``` 
+- GitHub Issues: https://github.com/luolin-ai/WeChatPadPro/issues
+- Telegram 群组: https://t.me/+LK0JuqLxjmk0ZjRh
