@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   wechatpadpro:
-    image: luolinaiwis/wechatpadpro:v0.1
+    image: registry.cn-hangzhou.aliyuncs.com/wechatpad/wechatpadpro:v0.11
     container_name: wechatpadpro
     restart: always
     ports:
@@ -30,7 +30,7 @@ services:
       - wechatpadpro_net
 
   redis:
-    image: redis:7-alpine
+    image: registry.cn-hangzhou.aliyuncs.com/wechatpad/wechatpadpro-redis:v0.1
     container_name: wechatpadpro_redis
     restart: always
     command: redis-server --requirepass 123456
@@ -45,7 +45,7 @@ services:
       - wechatpadpro_net
 
   mysql:
-    image: luolinaiwis/wechatpadpro-mysql:v0.1
+    image: registry.cn-hangzhou.aliyuncs.com/wechatpad/wechatpadpro-mysql:v0.11
     container_name: wechatpadpro_mysql
     restart: always
     environment:
