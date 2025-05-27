@@ -611,29 +611,3 @@ innodb_large_prefix = 1
 
 ![](./static/doc/apipost2.png)
 
-
-
-
-
-## 关于测试
-
-> 可下载 [ApiPOST(v7.2.X)经典版！经典版！](https://www.apipost.cn/download.html) 后，将 [微信849.apipost.v7.json](./static/swagger/微信849.apipost.v7.json) 直接导入 ApiPOST 使用，导入后先设置 环境为：【小小彩笔的环境】；`ApiPOST-v8版`目前无法使用 ws 长链接 发送/接收 同步消息请求；
->
-> 
->
-> 之后，必须要设置以下环境变量：
->
-> - `WS_URL`：你的WX-Web-API服务的WebSocket基础URL，例如 `ws://127.0.0.1:8848/v849`；
-> - `ADMIN_KEY`：请求`/login/GenAuthKey`、`/login/GenAuthKey2`接口所需的管理接口KEY；
-> - `SOCKS5`：socks5代理；最好是家附近的代理IP，其次同市IP，最其次同省IP；异地IP极易风控；
->
-> 
->
-> 之后，请求`/login/GenAuthKey`或`/login/GenAuthKey2`接口，将生成的UUID保存为`TOKEN_KEN`环境变量即可，之后所有WX接口操作均会携带该值；
->
-> 
->
-> 另外注意：这些ApiPOST接口定义里面，部分已经内置好了【请求的后置处理操作】---【自定义处理resopnse响应的脚本】，会自动提取并设置某些环境变量的值；
->
-> 
-
